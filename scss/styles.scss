@@ -1,0 +1,287 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+
+// Variables
+$primary: #1B331F;
+$secondary: #f8f9fa;
+$dark: #212529;
+$font-family-base: 'Poppins', sans-serif;
+$font-family-serif: 'Libre Baskerville', serif;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+
+.logo {
+  max-height: 25px;
+  width: auto;
+}
+
+
+.navbar .nav-link {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+
+.btn-home {
+  background-color: $primary;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  &:hover {
+    background-color: darken($primary, 10%);
+    color: white;
+  }
+}
+
+.btn-discover {
+  background-color: transparent;
+  color: $primary;
+  border: 2px solid $primary;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.btn-display {
+  background-color: white;
+  color: $dark;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+
+.carousel-item {
+  height: 80vh;
+  
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .carousel-caption {
+    left: 10%;
+    right: auto;
+    padding-bottom: 5rem;
+    text-align: left;
+  }
+}
+
+
+.category-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.card-display {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+
+  .btn-display {
+    padding: 1.2rem;
+    width: 100%;
+    max-width: 290px;
+  }
+}
+
+
+.card-image {
+  overflow: hidden;
+  border: none;
+  transition: all 0.3s ease;
+  
+  img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  &:hover img {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    padding: 1.25rem 0;
+  }
+  
+  .card-title {
+    font-family: $font-family-serif;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+.bg-mid {
+  background-color: $secondary;
+  padding: 3rem 0;
+}
+
+
+.img-svg {
+  font-size: 2.5rem;
+  color: $primary;
+  margin-bottom: 1rem;
+}
+
+
+.mt-7 {
+  margin-top: 5rem;
+}
+
+.cio {
+  color: $primary;
+  font-family: $font-family-serif;
+}
+
+
+.testimonial-section {
+  position: relative;
+  padding: 5rem 0;
+  
+  .base-img {
+    border-radius: 5px;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    max-width: 30%;
+    bottom: -15%;
+    right: -5%;
+    z-index: 2;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    max-width: 20%;
+    top: 10%;
+    left: -5%;
+    z-index: 2;
+  }
+  
+  .quote-icon {
+    font-size: 2rem;
+    color: $primary;
+    opacity: 0.5;
+  }
+  
+  blockquote {
+    font-family: $font-family-serif;
+    line-height: 1.8;
+  }
+}
+
+
+.footer {
+  background-color: #f8f9fa;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  
+  h6 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin-bottom: 0.75rem;
+    }
+    
+    a {
+      color: #6c757d;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  
+  .social-icons {
+    a {
+      color: #6c757d;
+      font-size: 1.25rem;
+      transition: color 0.2s ease;
+      
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  
+  .newsletter-form {
+    margin-top: 1rem;
+    
+    .form-control {
+      border-color: #ced4da;
+      border-radius: 0;
+    }
+    
+    .btn-link {
+      color: $primary;
+    }
+  }
+}
+
+
+.color-primary {
+  color: $primary;
+}
+
+.color-black {
+  color: $dark;
+}
+
+.color-grey-darktext {
+  color: #6c757d;
+}
