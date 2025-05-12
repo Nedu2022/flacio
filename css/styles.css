@@ -1,11 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400&display=swap");
 /*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,400&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12051,7 +12051,7 @@ body {
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
-.footer h6, .footer .h6 {
+.footer h6 {
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
