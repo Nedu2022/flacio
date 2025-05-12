@@ -11873,6 +11873,15 @@ body {
   width: auto;
 }
 
+.point {
+  background-color: #1B331F;
+}
+@media screen and (max-width: 768px) {
+  .point {
+    font-size: 15px;
+  }
+}
+
 .navbar .nav-link {
   font-weight: 500;
   font-size: 0.85rem;
@@ -11892,18 +11901,20 @@ body {
   color: white;
 }
 
-.btn-discover {
-  background-color: transparent;
-  color: #1B331F;
-  border: 2px solid #1B331F;
-  padding: 0.75rem 2rem;
+.discover .btn-discover {
+  color: white;
+  border: 1px solid white;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.btn-discover:hover {
+.discover .btn-discover:hover {
   background-color: #1B331F;
+  border: #1B331F;
   color: white;
+}
+.discover .discover-text {
+  font-size: 0.7rem;
 }
 
 .btn-display {
@@ -11963,10 +11974,14 @@ body {
   overflow: hidden;
   border: none;
   transition: all 0.3s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-.card-image img {
+.card-image .card-image {
   transition: transform 0.5s ease;
   width: 100%;
+  height: 300px;
   max-width: 350px;
 }
 .card-image:hover img {
@@ -12010,15 +12025,15 @@ body {
 .testimonial-section .overlay-image {
   position: absolute;
   max-width: 30%;
-  bottom: -15%;
-  right: -5%;
+  top: 68%;
+  left: 7%;
   z-index: 2;
 }
 .testimonial-section .text-overlay {
   position: absolute;
   max-width: 20%;
-  top: 10%;
-  left: -5%;
+  bottom: 86%;
+  right: 7%;
   z-index: 2;
 }
 .testimonial-section .quote-icon {
